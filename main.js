@@ -12,8 +12,9 @@
 
 function renderCoffee(coffee) {
     var html = '<div class ="coffee">';
-        html = '<div class = "card">';
-        html += '<p><b>' + coffee.name + '</b><hr>' + coffee.roast + '</p>';
+        html += '<div>';
+        html += '<p><span class = "coffee-name">' + coffee.name +'</span>' + "   ";
+        html += '<span class="coffee-roast">' + coffee.roast +'</span>' + '</p>';
         html += '</div>';
         html += '</div>';
 
@@ -34,7 +35,6 @@ function renderCoffees(coffees) {
     for(var i = 0; i < coffees.length ; i++) {
         html += renderCoffee(coffees[i]);
     }
-
     return html;
 }
 
