@@ -6,53 +6,53 @@
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
     <title></title>
     <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css?family=Amatic+SC|Shrikhand" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=Skranji" rel="stylesheet">
 </head>
 <body>
-<div class="container">
-<!--<div class="jumbotron jumbotron-fluid d-none d-md-block">-->
-    <!--<div class="container-fluid">-->
-    <h1 align="middle">Coffee!</h1>
+<div class="container align-middle">
+    <h1 align="middle">CoffeeAF!</h1>
     <div class="spacer-row"></div>
     <div class="row">
-        <div class="col-sm-6">
+        <div class="text-left col-6">
             <div>
                 <ul class = "coffee-list" id = "coffees"></ul>
             </div>
 
         </div>
         <div class = "container-form form-group col-sm-6">
-            <form>
-                <label><h5>Roast</h5></label>
-                <select class="form-control form-control-lg" for="roast-selection" id="roast-selection">
-                    <option selected value="all">all</option>
-                    <option value="light">light</option>
-                    <option value="medium">medium</option>
-                    <option value="dark">dark</option>
-                </select>
-                <br>
-                <label><h5>Coffee Name</h5></label>
-                <input onkeyup="searchCoffees()" value=" "  type="text" class="form-control" id="coffee-search" placeholder="Enter search">
-                <br>
-                <!--<input class="btn-block submit-button" id="submit" type="submit">-->
 
-                <!--second coffee search-->
-
-                <h2 align="middle">Add a Coffee</h2>
-                <select class="form-control form-control-lg" for="roast-selection" id="roast-selection-2">
-
+                <form>
                     <label><h5>Roast</h5></label>
-                    <option selected value="all">all</option>
-                    <option value="light">light</option>
-                    <option value="medium">medium</option>
-                    <option value="dark">dark</option>
-                </select>
-                <br>
-                <label><h5>Name</h5></label>
-                <input type="text" id="coffee" name="name" class="form-control">
-                <br>
-                <!--<button class="btn-block submit-button">Submit</button>-->
-            </form>
+                    <select class="form-control form-control-lg" for="roast-selection" id="roast-selection">
+                        <option selected value="all">all</option>
+                        <option value="light">light</option>
+                        <option value="medium">medium</option>
+                        <option value="dark">dark</option>
+                    </select>
+                    <br>
+                    <label><h5>Coffee Name</h5></label>
+                    <input onkeyup="searchCoffees()" value=""  type="text" class="form-control" id="coffee-search" placeholder="Enter search">
+                    <br>
+                    <!--<input class="btn-block submit-button" id="submit" type="submit">-->
+
+                    <!--second coffee search-->
+
+                    <h5 class="add-coffee" align="middle">Add a Coffee</h5>
+                    <select class="form-control form-control-lg" for="roast-selection" id="roast-selection-2">
+
+                        <label><h5>Roast</h5></label>
+                        <option selected value="all">all</option>
+                        <option value="light">light</option>
+                        <option value="medium">medium</option>
+                        <option value="dark">dark</option>
+                    </select>
+                    <br>
+                    <label><h5>Name</h5></label>
+                    <input type="text" id="coffee" name="name" class="form-control">
+                    <br>
+                    <!--<button class="btn-block submit-button">Submit</button>-->
+                </form>
         </div>
     </div>
 </div>

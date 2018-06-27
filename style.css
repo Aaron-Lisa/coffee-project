@@ -3,9 +3,32 @@
     /*background-size: cover;*/
 /*}*/
 
+.form-control {
+    font-family: Amatic SC;
+}
 
+h5 {
+    color: white;
+    font-size: 40px;
+    font-family: 'Shrikhand' , cursive;
+    text-shadow: black 3px 3px 3px;
+}
+.coffee-roast {
+    color: black;
+    text-shadow: white 1px 1px 1px;
+
+
+
+}
+.coffee-name {
+    color: white;
+    font-size: 35px;
+    font-family: 'Shrikhand' , cursive;
+    text-shadow: black 3px 3px 3px;
+
+}
 body {
-    background-image: url("coffee-img/coffee-illustration-640x400.jpg");
+    background-image: url("coffee-img/c3d72a4fe14f6a51c4df2f1f847400f3.jpg");
     background-size: cover;
     background-repeat:   no-repeat;
     background-attachment: fixed;
@@ -15,7 +38,13 @@ body {
 
 h1 {
     font-family: Skranji;
+    color: black;
     font-size: 75px;
+    /*text-shadow: black 3px 3px 3px;*/
+}
+
+.form-control {
+    font-family: Shirkhand;
 }
 table {
     border-collapse: collapse;
@@ -26,9 +55,14 @@ td, th {
     border: 1px solid black;
     padding: 5px 10px;
 }
+.add-coffee {
+    color: white;
+    text-decoration: underline;
+    font-family: Skranji;
+}
 
 .container {
-    height: 100%;
+    height: 568px;
 }
 
 .spacer-row {
@@ -58,10 +92,13 @@ td, th {
 }
 
 .container-form {
-    padding: 10px;
-    background:transparent;
+    padding: 25px;
+    background:rgba(0,0,0,0.3);
     border: 1px solid white;
     border-radius: 10px;
     box-shadow: 5px 10px 8px black;
     font-family: Skranji;
+}
+.coffee-list {
+    font-size: 30px;
 }

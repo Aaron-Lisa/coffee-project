@@ -1,8 +1,8 @@
 "use strict";
 
 function renderCoffee(coffee) {
-    var html = '<li><a><span class = "coffee-name">' + coffee.name +'</span>' + "  ";
-        html += '<span class="coffee-roast">' + coffee.roast +'</span></a></li>';
+    var html = '<li><a><span class = "col-6 coffee-name">' + coffee.name +'</span>' + "";
+        html += '<span class="coffee-roast" style="font-family: Amatic SC">' + coffee.roast +'</span></a></li>';
 
         return html;
 }
