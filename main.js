@@ -1,34 +1,16 @@
 "use strict";
 
-// function renderCoffee(coffee) {
-//     var html = '<div class="coffee">';
-//     html += '<td>' + coffee.id + '</td>';
-//     html += '<p>' + coffee.name + '</p>';
-//     html += '<p>' + coffee.roast + '</p>';
-//     html += '</div>';
-//
-//     return html;
-// }
-
 function renderCoffee(coffee) {
     var html = '<div class ="coffee">';
-        html += '<div>';
-        html += '<p><span class = "coffee-name">' + coffee.name +'</span>' + "  ";
-        html += '<span class="coffee-roast">' + coffee.roast +'</span>' + '</p>';
-        html += '</div>';
+        html += '<ul id="coffee-ul" class="coffee-list">';
+        html += '<li><a><span class = "coffee-name">' + coffee.name +'</span>' + "  ";
+        html += '<span class="coffee-roast">' + coffee.roast +'</span></a></li>';
+        html += '</ul>';
         html += '</div>';
 
         return html;
 }
 
-// function renderCoffees(coffees) {
-//     var html = '';
-//     for(var i = coffees.length - 1; i >= 0; i--) {
-//         html += renderCoffee(coffees[i]);
-//     }
-//
-//     return html;
-// }
 
 function renderCoffees(coffees) {
     var html = '';
@@ -37,6 +19,29 @@ function renderCoffees(coffees) {
     }
     return html;
 }
+
+
+
+function searchForCoffee() {
+    var input, filter, ul, li, a, i;
+    input = document.getElementById("coffee-search");
+    filter = input.value.toUpperCase();
+    ul = document.getElementById("coffee-ul");
+    li = ul.getElementsByTagName("li");
+    for (i = 0; i < li.length; i++) {
+        a = li[i].getElementsByTagName("a")[0];
+        if (a.innerHTML.toUpperCase().indexOf(filter) > -1) {
+            li[i].style.display = "";
+        } else {
+            li[i].style.display = "none";
+
+        }
+    }
+}
+
+
+
+
 
 
 function updateCoffees(e) {
@@ -50,6 +55,8 @@ function updateCoffees(e) {
     });
     tbody.innerHTML = renderCoffees(filteredCoffees);
 }
+
+
 
 
 // from http://www.ncausa.org/About-Coffee/Coffee-Roasts-Guide
@@ -71,10 +78,10 @@ var coffees = [
 
 ];
 
-
 var tbody = document.querySelector('#coffees');
 var submitButton = document.querySelector('#submit');
 var roastSelection = document.querySelector('#roast-selection');
+
 
 tbody.innerHTML = renderCoffees(coffees);
 

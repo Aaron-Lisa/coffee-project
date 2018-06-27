@@ -23,3 +23,7 @@ td, th {
 .coffee-roast {
     font-weight: lighter;
 }
+
+.coffee-list {
+    list-style-type: none;
+}

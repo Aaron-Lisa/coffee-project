@@ -13,54 +13,45 @@
     <h1 align="middle">Coffee!</h1>
     <div class="spacer-row"></div>
     <div class="row">
-        <div class="col-sm-6">
+        <div class="col-sm-3">
             <div>
                 <p id = "coffees"></p>
             </div>
 
-            <!--<table>-->
-            <!--<thead>-->
-            <!--<tr>-->
-            <!--<th>ID</th>-->
-            <!--<th>NAME</th>-->
-            <!--<th>ROAST</th>-->
-            <!--</tr>-->
-            <!--</thead>-->
-            <!--<tbody id="coffees"></tbody>-->
-            <!--</table>-->
         </div>
-
         <div class = "form-group col-sm-6">
             <form>
-                <label><h3>Roast</h3></label>
+                <label><h5>Roast</h5></label>
                 <select  class="form-control form-control-lg" for="roast-selection" id="roast-selection">
                     <option selected value="all">all</option>
                     <option value="light">light</option>
                     <option value="medium">medium</option>
                     <option value="dark">dark</option>
                 </select>
-                <label><h3>Coffee Name</h3></label>
-                <input type="text" class="form-control" id="coffee-search" placeholder="Enter search">
+                <br>
+                <label><h5>Coffee Name</h5></label>
+                <input onkeyup="searchForCoffee()" type="text" class="form-control" id="coffee-search" placeholder="Enter search">
                 <br>
                 <input id="submit" type="submit">
-                <h2 align="middle">Add a Coffee</h2>
-                <select  class="form-control form-control-lg" for="roast-selection" id="roast-selection">
 
-                    <label><h3>Roast</h3></label>
+                <!--second coffee search-->
+
+                <h2 align="middle">Add a Coffee</h2>
+                <select  class="form-control form-control-lg" for="roast-selection" id="roast-selection-2">
+
+                    <label><h5>Roast</h5></label>
                     <option selected value="all">all</option>
                     <option value="light">light</option>
                     <option value="medium">medium</option>
                     <option value="dark">dark</option>
                 </select>
                 <br>
-
             <form>
-                <label><h3>Name</h3></label>
+                <label><h5>Name</h5></label>
                 <input type="text" id="coffee" name="name" class="form-control">
             </form>
             <br>
         <button class=""btn-block">Submit</button>
-
             </form>
         </div>
     </div>
