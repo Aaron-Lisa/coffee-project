@@ -8,7 +8,7 @@
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
-<div class="container-fluid">
+<div class="container">
 
     <h1 align="middle">Coffee!</h1>
     <div class="spacer-row"></div>
@@ -19,7 +19,7 @@
             </div>
 
         </div>
-        <div class = "form-group col-sm-6">
+        <div class = "container-form form-group col-sm-6">
             <form>
                 <label><h5>Roast</h5></label>
                 <select class="form-control form-control-lg" for="roast-selection" id="roast-selection">
@@ -32,7 +32,7 @@
                 <label><h5>Coffee Name</h5></label>
                 <input onkeyup="searchCoffees()" value=" "  type="text" class="form-control" id="coffee-search" placeholder="Enter search">
                 <br>
-                <input id="submit" type="submit">
+                <!--<input class="btn-block submit-button" id="submit" type="submit">-->
 
                 <!--second coffee search-->
 
@@ -46,12 +46,10 @@
                     <option value="dark">dark</option>
                 </select>
                 <br>
-            <form>
                 <label><h5>Name</h5></label>
                 <input type="text" id="coffee" name="name" class="form-control">
-            </form>
-            <br>
-        <button class=""btn-block">Submit</button>
+                <br>
+                <!--<button class="btn-block submit-button">Submit</button>-->
             </form>
         </div>
     </div>

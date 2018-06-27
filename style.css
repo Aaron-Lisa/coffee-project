@@ -1,5 +1,9 @@
-html, body {
-    background: blanchedalmond ;
+body {
+    background-image: url("coffee-img/coffee-illustration-640x400.jpg");
+    background-size: cover;
+    background-repeat:   no-repeat;
+    background-position: center center;
+    background-color: #C3986B;
 }
 
 table {
@@ -10,6 +14,10 @@ table {
 td, th {
     border: 1px solid black;
     padding: 5px 10px;
+}
+
+.container {
+    height: 100%;
 }
 
 .spacer-row {
@@ -26,4 +34,18 @@ td, th {
 
 .coffee-list {
     list-style-type: none;
+}
+
+.submit-button {
+    border: 3px solid #c09853;
+    background-color: khaki;
+    border-radius: 20px;
+}
+
+.container-form {
+    padding: 10px;
+    background:transparent;
+    border: 1px solid white;
+    border-radius: 10px;
+    box-shadow: 5px 10px 8px black;
 }
