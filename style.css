@@ -16,13 +16,11 @@ h5 {
 .coffee-roast {
     color: black;
     text-shadow: white 1px 1px 1px;
-
-
-
 }
+
 .coffee-name {
     color: white;
-    font-size: 35px;
+    font-size: 40px;
     font-family: 'Shrikhand' , cursive;
     text-shadow: black 3px 3px 3px;
 
@@ -58,7 +56,7 @@ td, th {
 .add-coffee {
     color: white;
     text-decoration: underline;
-    font-family: Skranji;
+    font-family: "Amatic SC";
 }
 
 .container {
@@ -69,10 +67,6 @@ td, th {
     height: 25px;
 }
 
-/*.coffee-name {*/
-    /*font-size: 30px;*/
-   /**/
-/*}*/
 
 .coffee-roast {
     font-weight: lighter;
@@ -92,7 +86,8 @@ td, th {
 }
 
 .container-form {
-    padding: 25px;
+    height: 568px;
+    padding: 30px;
     background:rgba(0,0,0,0.3);
     border: 1px solid white;
     border-radius: 10px;
